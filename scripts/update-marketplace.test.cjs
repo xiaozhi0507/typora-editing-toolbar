@@ -1,0 +1,10 @@
+'use strict';
+const {test}=require('node:test');
+const assert=require('node:assert/strict');
+const {merge}=require('./update-marketplace.cjs');
+const row=(id,version='1.0.0')=>({id,name:id,version,minHostVersion:'1.108.0',apiVersion:1,sha256:'a'.repeat(64),packageUrl:'https://github.com/xiaozhi0507/typora-editing-toolbar/releases/download/'+id+'-v'+version+'/'+id+'.zip'});
+const catalog=(...modules)=>({schemaVersion:1,name:'Test market',modules});
+test('adding and updating one module preserves other modules',()=>{const old=row('another-module');const initial=catalog(old,row('ai-reading-assistant'));const result=merge(initial,catalog(row('ai-reading-assistant','1.1.0')));assert.equal(result.modules.length,2);assert.deepEqual(result.modules.find(x=>x.id===old.id),old);assert.equal(result.modules.find(x=>x.id==='ai-reading-assistant').version,'1.1.0');assert.equal(initial.modules[1].version,'1.0.0');});
+test('blocks downgrade and replacing an existing version with different bytes',()=>{assert.throws(()=>merge(catalog(row('ai-module','1.1.0')),catalog(row('ai-module'))),/downgrade/);assert.throws(()=>merge(catalog(row('ai-module')),catalog({...row('ai-module'),sha256:'b'.repeat(64)})),/different contents/);});
+test('preserves documentation when generated metadata leaves it empty',()=>{const before={...row('ai-module'),documentationUrl:'https://example.com/docs'};assert.equal(merge(catalog(before),catalog({...row('ai-module','1.1.0'),documentationUrl:''})).modules[0].documentationUrl,before.documentationUrl);});
+test('rejects duplicate entries and non-HTTPS package URLs',()=>{assert.throws(()=>merge(catalog(),catalog(row('ai-module'),row('ai-module'))),/duplicate/);assert.throws(()=>merge(catalog(),catalog({...row('ai-module'),packageUrl:'http://example.com/ai.zip'})),/HTTPS/);});

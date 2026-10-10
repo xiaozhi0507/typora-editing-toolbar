@@ -1,0 +1,9 @@
+*.zip
+*.log
+.env
+.env.*
+node_modules/
+accounts.dpapi
+sessions/
+drafts/
+publication-audit.json
