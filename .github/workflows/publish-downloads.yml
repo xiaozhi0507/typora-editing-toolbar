@@ -1,0 +1,26 @@
+name: Publish verified downloads
+on:
+  push:
+    branches: [main]
+    paths: [release-bundle.json]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: publish-verified-downloads
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.repository == 'xiaozhi0507/typora-editing-toolbar'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Verify and publish versioned packages
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/publish-downloads.cjs
