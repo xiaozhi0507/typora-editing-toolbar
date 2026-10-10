@@ -6,9 +6,9 @@ Windows 工具栏、AI 阅读助手、ScienceDirect 抓取扩展与科研绘图�
 
 | 内容 | 版本 | 下载 | 说明 |
 | --- | --- | --- | --- |
-| Typora 编辑工具栏与完整源码 | 1.114.4 | [安装 ZIP](downloads/typora-editing-toolbar-2026-10-10-v1.114.4.zip?raw=true) | 下方安装步骤 |
-| AI 阅读助手独立模块 | 1.3.4 | [模块 ZIP](downloads/ai-reading-assistant-1.3.4.zip?raw=true) | [模块说明](docs/ai-reading-assistant.md) |
-| ScienceDirect → Typora | 0.5.12 | [扩展 ZIP](downloads/sciencedirect-typora-exporter-v0.5.12.zip?raw=true) | [扩展安装](docs/sciencedirect-typora-exporter.md) |
+| Typora 编辑工具栏与完整源码 | 1.114.5 | [安装 ZIP](downloads/typora-editing-toolbar-2026-10-11-v1.114.5.zip?raw=true) | 下方安装步骤 |
+| AI 阅读助手独立模块 | 1.3.5 | [模块 ZIP](downloads/ai-reading-assistant-1.3.5.zip?raw=true) | [模块说明](docs/ai-reading-assistant.md) |
+| ScienceDirect → Typora | 0.5.13 | [扩展 ZIP](downloads/sciencedirect-typora-exporter-v0.5.13.zip?raw=true) | [扩展安装](docs/sciencedirect-typora-exporter.md) |
 | 科研 Python 绘图 Skill | 1.1.0 | [Skill ZIP](downloads/scientific-python-plotting.zip?raw=true) | [技能导入](docs/scientific-python-plotting.md) |
 
 [校验文件](downloads) · [版本记录与 Release 附件](https://github.com/xiaozhi0507/typora-editing-toolbar/releases)
@@ -24,9 +24,15 @@ Windows 工具栏、AI 阅读助手、ScienceDirect 抓取扩展与科研绘图�
 
 面向 Windows，安装包测试宿主为 Typora 1.14.10。
 
-## AI 1.3.4 更新测试
+## AI 1.3.5 更新测试
 
-主程序为 1.114.3 或更新版本、AI 当前为 1.3.3 时，打开插件市场检查更新，应显示 AI 1.3.4。点击“更新”后重新打开助手，欢迎页会显示带出处的随机名句。每次打开助手更换一句，同一页面停留期间保持不变。更新不会自动安装 Python 或改动已有环境。
+主程序为 1.114.3 或更新版本、AI 当前为 1.3.3 时，打开插件市场检查更新，应显示 AI 1.3.5。点击“更新”后重新打开助手，欢迎页会显示带出处的随机名句。每次打开助手更换一句，同一页面停留期间保持不变。更新不会自动安装 Python 或改动已有环境。
+
+## 1.114.5 更新入口
+
+“已安装”仅管理开关、文档和卸载；更新入口在“浏览市场”。这项布局调整需更新工具栏主程序，单独升级 AI 1.3.5 不会替换主程序。
+
+抓取扩展 0.5.13 在选项页提供自动检查和更新下载。当前解压安装方式仍需替换原文件夹并重新加载；不是无操作自动安装。
 
 ## 本轮变化
 
@@ -36,7 +42,7 @@ Windows 工具栏、AI 阅读助手、ScienceDirect 抓取扩展与科研绘图�
 - ScienceDirect 扩展与工具栏通过端口 23120 连接，两端需要匹配更新。
 - 绘图 Skill 同步当前规范与 Illustrator 编辑参考。
 
-验证：主程序 1372 项测试通过、17 项可选测试跳过；扩展 59 项通过。包清单、源码一致性与 SHA-256 已核验；欢迎页在明暗和窄窗口完成浏览器检查。本次不声称新增原生 Typora 界面或真实模型服务验证。
+验证：主程序 1372 项测试通过、17 项可选测试跳过；扩展 67 项通过。包清单、源码一致性与 SHA-256 已核验；欢迎页在明暗和窄窗口完成浏览器检查。本次不声称新增原生 Typora 界面或真实模型服务验证。
 
 ## 官方模块市场
 

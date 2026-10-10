@@ -2,66 +2,50 @@
   "schemaVersion": 1,
   "releases": [
     {
-      "tag": "ai-reading-assistant-v1.3.4",
-      "title": "AI 阅读助手 v1.3.4",
-      "body": "欢迎页加入 16 条古典名言与诗句，另起一行标注出处和作者。重新打开 Markdown 后打开助手、再次打开助手或新建对话时随机更换，连续两次不重复。\n\n最低工具栏版本 1.114.3。通过插件市场检查更新并点击更新；也可下载 ZIP 后使用本地安装。更新保留对话与配置。\n\nSHA-256: edfd2196a4e661e4266de9b72a51690d6158a0f5a67de0c75190bee53891f08d\n\n[安装与使用说明](https://github.com/xiaozhi0507/typora-editing-toolbar#readme)",
+      "tag": "ai-reading-assistant-v1.3.5",
+      "title": "AI 阅读助手 1.3.5",
+      "body": "配套独立更新包，保留 16 条随机名句、出处、项目环境及回答效果。\n\n最低工具栏 1.114.3。插件市场 → 浏览市场 → 更新。更新按钮位置属于主程序，需工具栏 1.114.5 才会从“已安装”隐藏；仅升级 AI 不会替换工具栏。\n\nSHA-256: 2f92fd389e1f27e1e8dc1766e5d00c0dcbe63ba4565e70f74c71295429c84db1",
       "latest": false,
       "assets": [
         {
-          "path": "downloads/ai-reading-assistant-1.3.4.zip",
-          "sha256": "edfd2196a4e661e4266de9b72a51690d6158a0f5a67de0c75190bee53891f08d"
+          "path": "downloads/ai-reading-assistant-1.3.5.zip",
+          "sha256": "2f92fd389e1f27e1e8dc1766e5d00c0dcbe63ba4565e70f74c71295429c84db1"
         },
         {
-          "path": "downloads/ai-reading-assistant-1.3.4.zip.sha256",
-          "sha256": "c8bcc5576a7c6d209242062fd10042b1d70ff6f534a3295da743339df10cbb03"
+          "path": "downloads/ai-reading-assistant-1.3.5.zip.sha256",
+          "sha256": "4c8d96bfbc5d207bb2821dd7933659c8d6d93f7495224bad72cb0860e6abe152"
         }
       ]
     },
     {
-      "tag": "sciencedirect-typora-exporter-v0.5.12",
-      "title": "ScienceDirect → Typora v0.5.12",
-      "body": "知识库连接端口改为 23120，避开 Zotero 连接端口；先核验服务，再提交文件，并优化连接错误提示。\n\n需工具栏 v1.113.3 或更新版本。解压后在 Chrome 扩展管理页加载 extension 文件夹；更新已有扩展后重新加载并刷新论文页。59 项自动测试通过，本次未新增真实论文抓取验证。\n\nSHA-256: 4e6118e7c17747b44d29e37cf0b8d65a79aebaa8db912ce01e1914720329bd34\n\n[安装与使用说明](https://github.com/xiaozhi0507/typora-editing-toolbar#readme)",
+      "tag": "sciencedirect-typora-exporter-v0.5.13",
+      "title": "ScienceDirect → Typora 0.5.13",
+      "body": "新增扩展更新区，默认每六小时自动检查，支持手动检查、离线缓存和新版下载。\n\n解压版无法自动覆盖自身文件：下载后替换原 extension 文件夹，再重新加载并刷新论文页。商店版由浏览器负责自动安装，本仓库当前提供解压包。67 项测试通过；未进行真实商店更新。\n\nSHA-256: 1f9f0649f3360ebdebd78c953a33f38e63c654e01b7de779d816be2631c04340",
       "latest": false,
       "assets": [
         {
-          "path": "downloads/sciencedirect-typora-exporter-v0.5.12.zip",
-          "sha256": "4e6118e7c17747b44d29e37cf0b8d65a79aebaa8db912ce01e1914720329bd34"
+          "path": "downloads/sciencedirect-typora-exporter-v0.5.13.zip",
+          "sha256": "1f9f0649f3360ebdebd78c953a33f38e63c654e01b7de779d816be2631c04340"
         },
         {
-          "path": "downloads/sciencedirect-typora-exporter-v0.5.12.zip.sha256",
-          "sha256": "09cfc858af7123dcb0d17b15811ef9709d3a8a678d8ebb6d88db52785ff70c83"
+          "path": "downloads/sciencedirect-typora-exporter-v0.5.13.zip.sha256",
+          "sha256": "9010eb5a137cb245100178e48fcf0b8510e4fabdf1302fad8e7dee68421a6641"
         }
       ]
     },
     {
-      "tag": "skill-scientific-python-plotting-v1.1.0",
-      "title": "科研 Python 绘图 Skill v1.1.0",
-      "body": "同步当前科研绘图技能包，包含 7 个文件；补充绘图规范、Illustrator 编辑与裁剪参考。原始 ZIP 字节保持不变，版本号仅用于本仓库分发管理。\n\n在 AI 助手设置 → 技能 → 添加中导入 ZIP，再启用。无需通过插件市场安装。\n\nSHA-256: 84697fb9bf5be84c0d6ec676b36cb4d05ef0f1228740654aca3bbfcad3aa062a\n\n[安装与使用说明](https://github.com/xiaozhi0507/typora-editing-toolbar#readme)",
-      "latest": false,
-      "assets": [
-        {
-          "path": "downloads/scientific-python-plotting.zip",
-          "sha256": "84697fb9bf5be84c0d6ec676b36cb4d05ef0f1228740654aca3bbfcad3aa062a"
-        },
-        {
-          "path": "downloads/scientific-python-plotting.zip.sha256",
-          "sha256": "2783233d57d1243123b23c8b30a88a43b51075afa97779a8c06d40ba5ba7de2a"
-        }
-      ]
-    },
-    {
-      "tag": "toolbar-v1.114.4",
-      "title": "Typora 编辑工具栏 v1.114.4",
-      "body": "同步当前 Windows 工具栏、源码与安装器。\n\n- 主安装包不自动携带或登记 AI 阅读助手；AI 模块通过插件市场单独安装。\n- 项目环境统一设置 Python 路径、科研包和项目覆盖，支持一键安装。\n- 工具栏分组默认收起，取消勾选后条目保留原位，取消持续高亮。\n- AI 1.3.4 源码包含随机名句欢迎页，独立模块包另行提供。\n- 含 ChatGPT 缺少 Node.js 时的下载引导、知识库原生打开提示与保存弹窗修复、引用指标需配置 API。\n\n完整解压，保存文档并完全退出 Typora，运行 install.cmd，再打开 Typora。当前本机未覆盖安装，以便测试 AI 1.3.3 → 1.3.4 市场升级。\n\n1372 项主程序测试通过，17 项可选测试跳过。包清单和哈希已核验；本次未新增原生 Typora 界面或真实模型调用验证。\n\nSHA-256: 675aa8baf1a89efc9bc8420b26aae4fd951b3a837696be3f90400bb26a81b8ca\n\n[安装与使用说明](https://github.com/xiaozhi0507/typora-editing-toolbar#readme)",
+      "tag": "toolbar-v1.114.5",
+      "title": "Typora 编辑工具栏 1.114.5",
+      "body": "插件市场“已安装”页移除更新按钮，只在“浏览市场”保留更新操作。保留版本、开关、文档、卸载和自动检查。\n\n主包与 AI 模块独立。包含 AI 1.3.5 源码，不自动安装 AI。保存文档并完全退出 Typora 后运行 install.cmd。1372 项测试通过，17 项可选测试跳过；本次未覆盖本机安装。\n\nSHA-256: ebb2f01b55fdeee52e836bdd0ac2b31666a724ec1dad7c5c8711b72fe44f7b4b",
       "latest": true,
       "assets": [
         {
-          "path": "downloads/typora-editing-toolbar-2026-10-10-v1.114.4.zip",
-          "sha256": "675aa8baf1a89efc9bc8420b26aae4fd951b3a837696be3f90400bb26a81b8ca"
+          "path": "downloads/typora-editing-toolbar-2026-10-11-v1.114.5.zip",
+          "sha256": "ebb2f01b55fdeee52e836bdd0ac2b31666a724ec1dad7c5c8711b72fe44f7b4b"
         },
         {
-          "path": "downloads/typora-editing-toolbar-2026-10-10-v1.114.4.zip.sha256",
-          "sha256": "3c252958fbcd1c5e4cd0fbef3737c6b3a35237e816eef921b448730c9d38f217"
+          "path": "downloads/typora-editing-toolbar-2026-10-11-v1.114.5.zip.sha256",
+          "sha256": "784a074e6932b2cf0826aee0eb1428d675e8c65fe19edf48c56fda5f092ea6df"
         }
       ]
     }
