@@ -2,50 +2,18 @@
   "schemaVersion": 1,
   "releases": [
     {
-      "tag": "sciencedirect-typora-exporter-v0.5.14",
-      "title": "ScienceDirect → Typora 0.5.14",
-      "body": "## 更新内容\n- GitHub 更新检查增加备用地址，改善主地址不可达时的检查。\n- 网络问题按原因显示，离线保留已有版本信息。\n- 商店安装改用浏览器原生更新检查。\n\n## 安装方式\n普通 ZIP 用于解压加载；旧版升级需替换原 extension 文件夹并重新加载。store ZIP 用于提交商店，materials ZIP 包含图标说明、隐私与截图。尚未通过商店审核，暂无商店安装链接；解压版不会自动覆盖自身文件。",
-      "latest": false,
-      "assets": [
-        {
-          "path": "downloads/sciencedirect-typora-exporter-v0.5.14.zip",
-          "sha256": "8743c12858c044d102fd3ba99ed0e4d39d325d6f5604a0a5e0e61e72884376cd"
-        },
-        {
-          "path": "downloads/sciencedirect-typora-exporter-v0.5.14.zip.sha256",
-          "sha256": "26cb53b706acb18b5ec11b7cd1a1214c307b69a46d2e156397643519a2f4f7ca"
-        },
-        {
-          "path": "downloads/sciencedirect-typora-exporter-store-v0.5.14.zip",
-          "sha256": "04134650af236258a4d13e3ae8f4caad5402c8d24ce7045b3da41a20bd2ee508"
-        },
-        {
-          "path": "downloads/sciencedirect-typora-exporter-store-v0.5.14.zip.sha256",
-          "sha256": "a6a661f71ec2e82b25685729a37db01da46247cfea13aadd8342e0895c72bd97"
-        },
-        {
-          "path": "downloads/sciencedirect-typora-exporter-store-materials-v0.5.14.zip",
-          "sha256": "34525c842fac8163f103379cc83476d420ca158c2a93cc94084d1227b51f7a0e"
-        },
-        {
-          "path": "downloads/sciencedirect-typora-exporter-store-materials-v0.5.14.zip.sha256",
-          "sha256": "32ea7cd7b82305c33f7f17bda1c73e9d54417355126da13db679bbc0fb65985a"
-        }
-      ]
-    },
-    {
-      "tag": "toolbar-v1.114.7",
-      "title": "Typora 编辑工具栏 1.114.7",
-      "body": "## 更新内容\n- 精简模块安装与更新确认，显示版本变化。\n- 工具栏更新与插件市场统一布局，版本紧邻名称。\n- 更新说明只展示相关版本的功能变化。\n- 在插件市场检查、下载工具栏更新，退出 Typora 后完成安装。",
+      "tag": "toolbar-v1.114.8",
+      "title": "Typora 编辑工具栏 1.114.8",
+      "body": "## 更新内容\n- 打开插件市场或工具栏更新页时自动检查更新。\n- 点击更新后下载并校验，显示“退出并完成安装”和“取消”。\n- 确认后正常退出 Typora，保留未保存文档提示，退出后自动完成安装。\n- 重启后正确显示“已是最新版本”。",
       "latest": true,
       "assets": [
         {
-          "path": "downloads/typora-editing-toolbar-2026-10-11-v1.114.7.zip",
-          "sha256": "fef9fea86d4d25de9637af58fa77f9f676cf3c92d21bf3fb437ef11cc8adfbb7"
+          "path": "downloads/typora-editing-toolbar-2026-10-11-v1.114.8.zip",
+          "sha256": "fe4666400193a64e20db07946a806bd09e630b9eb876f3308e29e1e24edf638c"
         },
         {
-          "path": "downloads/typora-editing-toolbar-2026-10-11-v1.114.7.zip.sha256",
-          "sha256": "9f44d2e45ffc6d2c76be36db159b658849ddc6e07f198d610c0c69b922a664dd"
+          "path": "downloads/typora-editing-toolbar-2026-10-11-v1.114.8.zip.sha256",
+          "sha256": "56654c3ecb50503178483a44c3a6aebfe7d39f776cecb5f72cf92cbc7794e653"
         }
       ]
     }
