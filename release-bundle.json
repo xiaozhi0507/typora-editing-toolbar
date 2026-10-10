@@ -2,18 +2,18 @@
   "schemaVersion": 1,
   "releases": [
     {
-      "tag": "toolbar-v1.114.8",
-      "title": "Typora 编辑工具栏 1.114.8",
-      "body": "## 更新内容\n- 打开插件市场或工具栏更新页时自动检查更新。\n- 点击更新后显示“退出并完成安装”和“取消”。\n- 确认后正常退出 Typora，保留未保存文档提示，退出后自动完成安装。\n- 重启后正确显示“已是最新版本”。",
+      "tag": "toolbar-v1.114.9",
+      "title": "Typora 编辑工具栏 1.114.9",
+      "body": "## 更新内容\n- 已是最新版时，工具栏更新按钮显示“无需更新”，与插件市场保持一致。\n- 打开更新页继续自动检查；检查失败时可手动重试。",
       "latest": true,
       "assets": [
         {
-          "path": "downloads/typora-editing-toolbar-2026-10-11-v1.114.8.zip",
-          "sha256": "fe4666400193a64e20db07946a806bd09e630b9eb876f3308e29e1e24edf638c"
+          "path": "downloads/typora-editing-toolbar-2026-10-11-v1.114.9.zip",
+          "sha256": "73c877bb7e8e4196092495b6cb7b8c77e5f90f3f918c9212df9ceb189c151512"
         },
         {
-          "path": "downloads/typora-editing-toolbar-2026-10-11-v1.114.8.zip.sha256",
-          "sha256": "56654c3ecb50503178483a44c3a6aebfe7d39f776cecb5f72cf92cbc7794e653"
+          "path": "downloads/typora-editing-toolbar-2026-10-11-v1.114.9.zip.sha256",
+          "sha256": "fbdf5ea9b00de0f6ec940d6265fc18eb02ba4e5ae9c6a041e546da0849ed9e81"
         }
       ]
     }
