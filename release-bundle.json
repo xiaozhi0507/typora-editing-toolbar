@@ -2,50 +2,50 @@
   "schemaVersion": 1,
   "releases": [
     {
-      "tag": "ai-reading-assistant-v1.3.5",
-      "title": "AI 阅读助手 1.3.5",
-      "body": "配套独立更新包，保留 16 条随机名句、出处、项目环境及回答效果。\n\n最低工具栏 1.114.3。插件市场 → 浏览市场 → 更新。更新按钮位置属于主程序，需工具栏 1.114.5 才会从“已安装”隐藏；仅升级 AI 不会替换工具栏。\n\nSHA-256: 2f92fd389e1f27e1e8dc1766e5d00c0dcbe63ba4565e70f74c71295429c84db1",
+      "tag": "sciencedirect-typora-exporter-v0.5.14",
+      "title": "ScienceDirect → Typora 0.5.14",
+      "body": "## 更新内容\n- GitHub 更新检查增加备用地址，改善主地址不可达时的检查。\n- 网络问题按原因显示，离线保留已有版本信息。\n- 商店安装改用浏览器原生更新检查。\n\n## 安装方式\n普通 ZIP 用于解压加载；旧版升级需替换原 extension 文件夹并重新加载。store ZIP 用于提交商店，materials ZIP 包含图标说明、隐私与截图。尚未通过商店审核，暂无商店安装链接；解压版不会自动覆盖自身文件。",
       "latest": false,
       "assets": [
         {
-          "path": "downloads/ai-reading-assistant-1.3.5.zip",
-          "sha256": "2f92fd389e1f27e1e8dc1766e5d00c0dcbe63ba4565e70f74c71295429c84db1"
+          "path": "downloads/sciencedirect-typora-exporter-v0.5.14.zip",
+          "sha256": "8743c12858c044d102fd3ba99ed0e4d39d325d6f5604a0a5e0e61e72884376cd"
         },
         {
-          "path": "downloads/ai-reading-assistant-1.3.5.zip.sha256",
-          "sha256": "4c8d96bfbc5d207bb2821dd7933659c8d6d93f7495224bad72cb0860e6abe152"
+          "path": "downloads/sciencedirect-typora-exporter-v0.5.14.zip.sha256",
+          "sha256": "26cb53b706acb18b5ec11b7cd1a1214c307b69a46d2e156397643519a2f4f7ca"
+        },
+        {
+          "path": "downloads/sciencedirect-typora-exporter-store-v0.5.14.zip",
+          "sha256": "04134650af236258a4d13e3ae8f4caad5402c8d24ce7045b3da41a20bd2ee508"
+        },
+        {
+          "path": "downloads/sciencedirect-typora-exporter-store-v0.5.14.zip.sha256",
+          "sha256": "a6a661f71ec2e82b25685729a37db01da46247cfea13aadd8342e0895c72bd97"
+        },
+        {
+          "path": "downloads/sciencedirect-typora-exporter-store-materials-v0.5.14.zip",
+          "sha256": "34525c842fac8163f103379cc83476d420ca158c2a93cc94084d1227b51f7a0e"
+        },
+        {
+          "path": "downloads/sciencedirect-typora-exporter-store-materials-v0.5.14.zip.sha256",
+          "sha256": "32ea7cd7b82305c33f7f17bda1c73e9d54417355126da13db679bbc0fb65985a"
         }
       ]
     },
     {
-      "tag": "sciencedirect-typora-exporter-v0.5.13",
-      "title": "ScienceDirect → Typora 0.5.13",
-      "body": "新增扩展更新区，默认每六小时自动检查，支持手动检查、离线缓存和新版下载。\n\n解压版无法自动覆盖自身文件：下载后替换原 extension 文件夹，再重新加载并刷新论文页。商店版由浏览器负责自动安装，本仓库当前提供解压包。67 项测试通过；未进行真实商店更新。\n\nSHA-256: 1f9f0649f3360ebdebd78c953a33f38e63c654e01b7de779d816be2631c04340",
-      "latest": false,
-      "assets": [
-        {
-          "path": "downloads/sciencedirect-typora-exporter-v0.5.13.zip",
-          "sha256": "1f9f0649f3360ebdebd78c953a33f38e63c654e01b7de779d816be2631c04340"
-        },
-        {
-          "path": "downloads/sciencedirect-typora-exporter-v0.5.13.zip.sha256",
-          "sha256": "9010eb5a137cb245100178e48fcf0b8510e4fabdf1302fad8e7dee68421a6641"
-        }
-      ]
-    },
-    {
-      "tag": "toolbar-v1.114.5",
-      "title": "Typora 编辑工具栏 1.114.5",
-      "body": "插件市场“已安装”页移除更新按钮，只在“浏览市场”保留更新操作。保留版本、开关、文档、卸载和自动检查。\n\n主包与 AI 模块独立。包含 AI 1.3.5 源码，不自动安装 AI。保存文档并完全退出 Typora 后运行 install.cmd。1372 项测试通过，17 项可选测试跳过；本次未覆盖本机安装。\n\nSHA-256: ebb2f01b55fdeee52e836bdd0ac2b31666a724ec1dad7c5c8711b72fe44f7b4b",
+      "tag": "toolbar-v1.114.7",
+      "title": "Typora 编辑工具栏 1.114.7",
+      "body": "## 更新内容\n- 精简模块安装与更新确认，显示版本变化。\n- 工具栏更新与插件市场统一布局，版本紧邻名称。\n- 更新说明只展示相关版本的功能变化。\n- 在插件市场检查、下载工具栏更新，退出 Typora 后完成安装。",
       "latest": true,
       "assets": [
         {
-          "path": "downloads/typora-editing-toolbar-2026-10-11-v1.114.5.zip",
-          "sha256": "ebb2f01b55fdeee52e836bdd0ac2b31666a724ec1dad7c5c8711b72fe44f7b4b"
+          "path": "downloads/typora-editing-toolbar-2026-10-11-v1.114.7.zip",
+          "sha256": "fef9fea86d4d25de9637af58fa77f9f676cf3c92d21bf3fb437ef11cc8adfbb7"
         },
         {
-          "path": "downloads/typora-editing-toolbar-2026-10-11-v1.114.5.zip.sha256",
-          "sha256": "784a074e6932b2cf0826aee0eb1428d675e8c65fe19edf48c56fda5f092ea6df"
+          "path": "downloads/typora-editing-toolbar-2026-10-11-v1.114.7.zip.sha256",
+          "sha256": "9f44d2e45ffc6d2c76be36db159b658849ddc6e07f198d610c0c69b922a664dd"
         }
       ]
     }
