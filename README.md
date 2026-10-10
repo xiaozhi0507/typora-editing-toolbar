@@ -23,6 +23,8 @@ https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/main/market
 
 下载更新会校验文件完整性；更新后需自行启用并确认信任模块。当前提供手动检查更新，不会后台静默更新。模块在本机执行代码，仅启用信任的来源。
 
+若在线安装提示超时，可从对应 Release 下载模块 ZIP，再用“插件市场 → 本地安装”导入。当前 v1.108.0 的下载请求限时为 30 秒，慢速网络可能超过此限制；完整下载后的模块包仍可本地安装。
+
 ## 文档
 
 - [AI 阅读助手使用说明](docs/ai-reading-assistant.md)
