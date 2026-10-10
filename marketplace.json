@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "name": "Typora 编辑工具栏 · 官方模块",
+  "modules": [
+    {
+      "id": "ai-reading-assistant",
+      "name": "AI 阅读助手",
+      "icon": "ai-reading-assistant",
+      "documentationUrl": "https://github.com/xiaozhi0507/typora-editing-toolbar/blob/main/docs/ai-reading-assistant.md",
+      "description": "阅读问答、编辑、GPT 网页、对话历史、提示词、技能、AI 插件连接、项目、终端、代码编辑与 Notebook。",
+      "author": "Typora Editing Toolbar",
+      "version": "1.1.0",
+      "minHostVersion": "1.108.0",
+      "apiVersion": 1,
+      "sha256": "b6fe90b6ef2aa40dac893a5fb1a0e6c628bfe1beb00f43c583f01fe3568fe3c6",
+      "packageUrl": "https://github.com/xiaozhi0507/typora-editing-toolbar/releases/download/ai-reading-assistant-v1.1.0/ai-reading-assistant-1.1.0.zip"
+    }
+  ]
+}
