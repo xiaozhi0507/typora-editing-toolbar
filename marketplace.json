@@ -9,11 +9,11 @@
       "documentationUrl": "https://github.com/xiaozhi0507/typora-editing-toolbar/blob/main/docs/ai-reading-assistant.md",
       "description": "阅读问答、编辑、GPT 网页、对话历史、提示词、技能、AI 插件连接、项目、终端、代码编辑与 Notebook。",
       "author": "Typora Editing Toolbar",
-      "version": "1.3.4",
+      "version": "1.3.5",
       "minHostVersion": "1.114.3",
       "apiVersion": 1,
-      "sha256": "edfd2196a4e661e4266de9b72a51690d6158a0f5a67de0c75190bee53891f08d",
-      "packageUrl": "https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/3f9b7297e75ed8328a6b9aed71b385fb38c544a0/downloads/ai-reading-assistant-1.3.4.zip"
+      "sha256": "2f92fd389e1f27e1e8dc1766e5d00c0dcbe63ba4565e70f74c71295429c84db1",
+      "packageUrl": "https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/6033eb1949874bf82001c4daf469e9bb58ed4c04/downloads/ai-reading-assistant-1.3.5.zip"
     }
   ]
 }
