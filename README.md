@@ -6,7 +6,7 @@ Windows 工具栏、AI 阅读助手、ScienceDirect 抓取扩展与科研绘图�
 
 | 内容 | 版本 | 下载 | 说明 |
 | --- | --- | --- | --- |
-| Typora 编辑工具栏与完整源码 | 1.114.17 | [安装 ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/b73c963e6947ceb438add238d62b60f8b759728d/downloads/typora-editing-toolbar-2026-10-11-v1.114.17.zip) | 下方安装步骤 |
+| Typora 编辑工具栏与完整源码 | 1.114.22 | [安装 ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/332e6990fe1b61a3f7e3aeadca506b6eabbb056a/downloads/typora-editing-toolbar-2026-10-11-v1.114.22.zip) | 下方安装步骤 |
 | AI 阅读助手独立模块 | 1.3.8 | [模块 ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/b73c963e6947ceb438add238d62b60f8b759728d/downloads/ai-reading-assistant-1.3.8.zip) | [模块说明](docs/ai-reading-assistant.md) |
 | ScienceDirect → Typora | 0.5.18 | [扩展 ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/5a5c763ef936718137b8e6a5459ed92a9b6ff0e4/downloads/sciencedirect-typora-exporter-v0.5.18.zip) | [扩展安装](docs/sciencedirect-typora-exporter.md) |
 | 科研 Python 绘图 Skill | 1.1.0 | [Skill ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/b9b23f3ef5e24c009a8510ec105c72b4ff895cc5/downloads/scientific-python-plotting.zip) | [技能导入](docs/scientific-python-plotting.md) |
@@ -23,6 +23,16 @@ Windows 工具栏、AI 阅读助手、ScienceDirect 抓取扩展与科研绘图�
 4. 安装器备份后更新，完成后重新打开 Typora。
 
 面向 Windows，安装包测试宿主为 Typora 1.14.10。
+
+## 1.114.22 云端备份与同步
+
+- 在“同步概览”点击“立即同步”上传本地；在“云端文件”点击“立即同步”下载云端备份。打开云端页自动读取全部历史文件，最新空备份不再隐藏旧文献。
+- 下载保留相对图片链接及本地修改，重复同步不重复增加文献。空知识库跳过自动同步，自动同步不清理云端。
+- 手动上传可预览并清理本地已彻底删除文献的云端备份；本地回收站文献与共用附件继续保留，清理对象移入 Google Drive 回收站。
+- 窗口支持拖动、八方向缩放与位置大小记忆，切换页签保持相同尺寸。账户设置默认展开，统计数字及说明等宽居中。
+- 搜索图标居中，文件类型筛选放在搜索框右侧；按钮悬停、按下及键盘聚焦保持清晰，兼容深色与窄窗口。通知集中在左下角。
+
+[完整发布说明与校验文件](https://github.com/xiaozhi0507/typora-editing-toolbar/releases/tag/toolbar-v1.114.22)。AI 阅读助手保持 1.3.8，无需重复更新。
 
 ## AI 1.3.8 更新
 
