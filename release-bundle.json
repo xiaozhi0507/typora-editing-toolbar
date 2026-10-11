@@ -2,18 +2,18 @@
   "schemaVersion": 1,
   "releases": [
     {
-      "tag": "toolbar-v1.114.9",
-      "title": "Typora 编辑工具栏 1.114.9",
-      "body": "## 更新内容\n- 已是最新版时，工具栏更新按钮显示“无需更新”，与插件市场保持一致。\n- 打开更新页继续自动检查；检查失败时可手动重试。",
+      "tag": "toolbar-v1.114.10",
+      "title": "Typora 编辑工具栏 1.114.10",
+      "body": "## 更新内容\n- 移除手动“检查更新”按钮，打开页面自动检查。\n- 有新版时只显示“更新”，最新版显示“无需更新”。",
       "latest": true,
       "assets": [
         {
-          "path": "downloads/typora-editing-toolbar-2026-10-11-v1.114.9.zip",
-          "sha256": "73c877bb7e8e4196092495b6cb7b8c77e5f90f3f918c9212df9ceb189c151512"
+          "path": "downloads/typora-editing-toolbar-2026-10-11-v1.114.10.zip",
+          "sha256": "98b577da0e013abcb0b44ed4bd03983b8c3e8809ea6c9503624fe4d11027797b"
         },
         {
-          "path": "downloads/typora-editing-toolbar-2026-10-11-v1.114.9.zip.sha256",
-          "sha256": "fbdf5ea9b00de0f6ec940d6265fc18eb02ba4e5ae9c6a041e546da0849ed9e81"
+          "path": "downloads/typora-editing-toolbar-2026-10-11-v1.114.10.zip.sha256",
+          "sha256": "4c64ac2872ac404a4894137a2f47b40bbc2883fe9c25684fe47233d3b00fb687"
         }
       ]
     }
