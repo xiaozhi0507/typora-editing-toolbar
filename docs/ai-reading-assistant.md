@@ -1,8 +1,14 @@
-# AI 阅读助手 1.3.8
+# AI 阅读助手 1.3.12
 
 最低工具栏版本：1.114.3。
 
-[下载独立模块](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/b73c963e6947ceb438add238d62b60f8b759728d/downloads/ai-reading-assistant-1.3.8.zip)。在工具栏“插件市场”检查更新；未安装时先安装，再信任并启用。主安装包不预装 AI 模块。
+[下载独立模块](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/5ea67bf6ce5d190e72331dafb6045538157b7937/downloads/ai-reading-assistant-1.3.12.zip)。在工具栏“插件市场”检查更新；未安装时先安装，再信任并启用。主安装包不预装 AI 模块。
+
+## 1.3.12 欢迎页与流光
+
+欢迎页包含 200 句中文名言诗句，闲置 12 秒后逐字消散并重组切换。首条消息发送前，正文、助手面板或未发送的输入框聚焦不会停止轮播。输入、鼠标移动与滚动会重新计时；选中文字或打开菜单时暂缓；关闭助手、隐藏页面或发送首条消息后暂停。不会显示倒计时或改动草稿。
+
+欢迎图标、标题与诗句居中排列；输入框聚焦显示柔和的边缘流光，生成时沿用 orbit、comet、aurora、pulse 四种思考效果。系统“减少动态效果”下直接换句并停止流光运动。
 
 ## 1.3.8 插件与连接界面
 
@@ -16,11 +22,11 @@ Plugin Creator 可在本机导入 create-plugin、update-plugin、prepare-plugin
 
 ## 欢迎页
 
-保留“从一个问题开始”，下方显示名言或诗句，再单独显示 “--《出处》 · 作者”。内置 100 条，重新打开 Markdown 后打开助手、再次打开助手或新建对话时更换；避免连续重复，不滚动播放。已有对话与资料不会被替换。
+保留“从一个问题开始”，下方显示名言或诗句，再单独显示 “--《出处》 · 作者”。内置 200 条，重新打开助手、新建对话或可见欢迎页闲置 12 秒时更换；避免连续重复。已有对话与资料不会被替换。
 
-名句均为古典作品，核对来源包括：[陆游《冬夜读书示子聿》](https://zh.wikisource.org/wiki/冬夜讀書示子聿)、[朱熹《观书有感》](https://zh.wikisource.org/wiki/觀書有感)、[王之涣《登鹳雀楼》](https://wikisource.org/wiki/登鸛雀樓_(王之渙))、[苏轼《题西林壁》](https://dict.revised.moe.edu.tw/dictView.jsp?ID=21491&la=0&powerMode=0)、[陆游《游山西村》](https://www.classicalchineseliterature.org/article.php?article=遊山西村)、[李白《行路难》](https://zh.wikisource.org/wiki/行路難三首)、[杜甫《望岳》](https://zh.wikisource.org/wiki/望嶽_(岱宗夫如何))、[郑燮《竹石》](https://hanyu.baidu.com/shici/detail?pid=1735da03382449a489a1479c53994009)、[荀子《劝学》](https://zh.wikisource.org/wiki/劝学)、[《论语》](https://zh.wikisource.org/wiki/論語/全覽)、[《礼记·中庸》](https://zh.wikisource.org/wiki/禮記/中庸)。
+原有名句来源包括：[陆游《冬夜读书示子聿》](https://zh.wikisource.org/wiki/冬夜讀書示子聿)、[朱熹《观书有感》](https://zh.wikisource.org/wiki/觀書有感)、[王之涣《登鹳雀楼》](https://wikisource.org/wiki/登鸛雀樓_(王之渙))、[苏轼《题西林壁》](https://dict.revised.moe.edu.tw/dictView.jsp?ID=21491&la=0&powerMode=0)、[陆游《游山西村》](https://www.classicalchineseliterature.org/article.php?article=遊山西村)、[李白《行路难》](https://zh.wikisource.org/wiki/行路難三首)、[杜甫《望岳》](https://zh.wikisource.org/wiki/望嶽_(岱宗夫如何))、[郑燮《竹石》](https://hanyu.baidu.com/shici/detail?pid=1735da03382449a489a1479c53994009)、[荀子《劝学》](https://zh.wikisource.org/wiki/劝学)、[《论语》](https://zh.wikisource.org/wiki/論語/全覽)、[《礼记·中庸》](https://zh.wikisource.org/wiki/禮記/中庸)。
 
-[完整 100 条名句清单](ai-welcome-quotes.md)。
+[完整 200 条名句清单](ai-welcome-quotes.md)。
 
 ## 现有功能
 
@@ -30,4 +36,4 @@ Plugin Creator 可在本机导入 create-plugin、update-plugin、prepare-plugin
 
 ## 更新按钮
 
-工具栏 1.114.5 起更新按钮只显示在“浏览市场”；AI 1.3.8 仍兼容工具栏 1.114.3。旧主程序的“已安装”按钮不会因单独升级 AI 而改变。
+工具栏 1.114.5 起更新按钮只显示在“浏览市场”；AI 1.3.12 仍兼容工具栏 1.114.3。旧主程序的“已安装”按钮不会因单独升级 AI 而改变。

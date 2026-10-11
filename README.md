@@ -6,8 +6,8 @@ Windows 工具栏、AI 阅读助手、ScienceDirect 抓取扩展与科研绘图�
 
 | 内容 | 版本 | 下载 | 说明 |
 | --- | --- | --- | --- |
-| Typora 编辑工具栏与完整源码 | 1.114.22 | [安装 ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/332e6990fe1b61a3f7e3aeadca506b6eabbb056a/downloads/typora-editing-toolbar-2026-10-11-v1.114.22.zip) | 下方安装步骤 |
-| AI 阅读助手独立模块 | 1.3.8 | [模块 ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/b73c963e6947ceb438add238d62b60f8b759728d/downloads/ai-reading-assistant-1.3.8.zip) | [模块说明](docs/ai-reading-assistant.md) |
+| Typora 编辑工具栏与完整源码 | 1.114.27 | [安装 ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/5ea67bf6ce5d190e72331dafb6045538157b7937/downloads/typora-editing-toolbar-2026-10-11-v1.114.27.zip) | 下方安装步骤 |
+| AI 阅读助手独立模块 | 1.3.12 | [模块 ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/5ea67bf6ce5d190e72331dafb6045538157b7937/downloads/ai-reading-assistant-1.3.12.zip) | [模块说明](docs/ai-reading-assistant.md) |
 | ScienceDirect → Typora | 0.5.18 | [扩展 ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/5a5c763ef936718137b8e6a5459ed92a9b6ff0e4/downloads/sciencedirect-typora-exporter-v0.5.18.zip) | [扩展安装](docs/sciencedirect-typora-exporter.md) |
 | 科研 Python 绘图 Skill | 1.1.0 | [Skill ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/b9b23f3ef5e24c009a8510ec105c72b4ff895cc5/downloads/scientific-python-plotting.zip) | [技能导入](docs/scientific-python-plotting.md) |
 
@@ -24,6 +24,23 @@ Windows 工具栏、AI 阅读助手、ScienceDirect 抓取扩展与科研绘图�
 
 面向 Windows，安装包测试宿主为 Typora 1.14.10。
 
+## 1.114.27 书籍导入、附件与导出
+
+- 文件夹可作为附件添加，保留全部层级与文件名，可逐级查看代码和 Notebook；同步、导出与恢复携带完整目录。
+- 修复相对文件夹链接、脚注与 CIP 书目识别，避免书籍导入失败或把责任编辑误作书名。
+- 导出资源按条目去重并分批快速压缩，上限扩大至 4032 MiB、60000 个文件；保留文件校验、取消与并发修改检查。
+- 详情栏向内拖动可收起，向外拖动展开并恢复宽度；条目图标和标题适当分开、垂直居中。
+
+[工具栏发布说明](https://github.com/xiaozhi0507/typora-editing-toolbar/releases/tag/toolbar-v1.114.27)
+
+## AI 1.3.12 诗句转场与聚焦流光
+
+- 欢迎页共 200 句中文名言诗句，保留出处与作者；闲置 12 秒后逐字消散、重组为下一句，不显示倒计时。
+- 首条消息发送前，正文、助手面板和输入框聚焦均不阻止切换，未发送的草稿保持原样。
+- 调整欢迎图标位置，增强输入框聚焦流光；保留四种思考效果，兼容减少动态效果设置。
+
+[AI 模块发布说明](https://github.com/xiaozhi0507/typora-editing-toolbar/releases/tag/ai-reading-assistant-v1.3.12) · [200 条名句与切换说明](docs/ai-welcome-quotes.md)
+
 ## 1.114.22 云端备份与同步
 
 - 在“同步概览”点击“立即同步”上传本地；在“云端文件”点击“立即同步”下载云端备份。打开云端页自动读取全部历史文件，最新空备份不再隐藏旧文献。
@@ -32,7 +49,7 @@ Windows 工具栏、AI 阅读助手、ScienceDirect 抓取扩展与科研绘图�
 - 窗口支持拖动、八方向缩放与位置大小记忆，切换页签保持相同尺寸。账户设置默认展开，统计数字及说明等宽居中。
 - 搜索图标居中，文件类型筛选放在搜索框右侧；按钮悬停、按下及键盘聚焦保持清晰，兼容深色与窄窗口。通知集中在左下角。
 
-[完整发布说明与校验文件](https://github.com/xiaozhi0507/typora-editing-toolbar/releases/tag/toolbar-v1.114.22)。AI 阅读助手保持 1.3.8，无需重复更新。
+[完整发布说明与校验文件](https://github.com/xiaozhi0507/typora-editing-toolbar/releases/tag/toolbar-v1.114.22)。当时配套的 AI 阅读助手为 1.3.8，当前版本见上方下载表。
 
 ## AI 1.3.8 更新
 
@@ -44,9 +61,9 @@ Windows 工具栏、AI 阅读助手、ScienceDirect 抓取扩展与科研绘图�
 
 AI 窗口复用工具栏的公共拖动实现；旧工具栏按需加载兼容代码，停用时清理，最低版本保持 1.114.3。现有对话与配置保留。
 
-欢迎页名言与经典诗词扩充到 100 条，出处和作者单独显示。重新打开文档后打开助手、再次打开助手或新建对话时换句，避免连续重复。已有对话不受影响。最低工具栏版本仍为 1.114.3，在“插件市场 → 浏览市场”更新独立模块。
+当前欢迎页包含 200 条名言诗句，出处和作者单独显示。欢迎页可见且闲置 12 秒后自动转场，避免连续重复；已有对话不受影响。最低工具栏版本仍为 1.114.3，在“插件市场 → 浏览市场”更新独立模块。
 
-[100 条名句清单](docs/ai-welcome-quotes.md)
+[200 条名句清单](docs/ai-welcome-quotes.md)
 
 ## 1.114.17 列宽联动与设置对齐
 
@@ -82,13 +99,13 @@ AI 窗口复用工具栏的公共拖动实现；旧工具栏按需加载兼容�
 
 ## 本轮变化
 
-- AI 欢迎页内置 100 条古典名言与诗句，出处独立显示；支持项目环境管理和四种随机回答流光效果。
+- AI 欢迎页内置 200 条中文名言诗句，出处独立显示，支持 12 秒闲置消散重组和输入框聚焦流光；保留项目环境管理及四种思考效果。
 - 工具栏分组默认收起，勾选变化保留设置列表条目，不再持续高亮。
 - 主程序独立于 AI 模块；新电脑需单独安装并启用 AI。引用数在配置相关 API 后显示。
 - ScienceDirect 扩展与工具栏通过端口 23120 连接，两端需要匹配更新。
 - 绘图 Skill 同步当前规范与 Illustrator 编辑参考。
 
-本版验证：162 项相关测试通过；原生 Typora 实测详情面板拖宽 160 像素时 8 列各缩小 20 像素，手动列宽、隐藏列、取消、键盘调整和重启恢复通过。插件设置完成宽窗口及 440 像素深色窗口检查，安装包清单与 SHA-256 已核验。抓取扩展 0.5.18 保持不变。
+本次发布前验证：145 项相关回归测试通过，工具栏 12 个运行文件和 AI 模块 9 个运行文件与本机已安装版本逐一匹配；两个 ZIP 清单与 SHA-256 已核验。现有隔离 Typora 浅色、深色、窄窗口、导入导出与交互验收记录保留。抓取扩展 0.5.18 和绘图 Skill 1.1.0 保持不变。
 
 ## 官方模块市场
 
