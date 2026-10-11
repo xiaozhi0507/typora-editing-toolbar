@@ -6,7 +6,7 @@ Windows 工具栏、AI 阅读助手、ScienceDirect 抓取扩展与科研绘图�
 
 | 内容 | 版本 | 下载 | 说明 |
 | --- | --- | --- | --- |
-| Typora 编辑工具栏与完整源码 | 1.114.14 | [安装 ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/1cf121c76071af57022cd1adc1377c12a0288797/downloads/typora-editing-toolbar-2026-10-11-v1.114.14.zip) | 下方安装步骤 |
+| Typora 编辑工具栏与完整源码 | 1.114.15 | [安装 ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/d7f38ec687aae5ad661b741e005eb22910a186fd/downloads/typora-editing-toolbar-2026-10-11-v1.114.15.zip) | 下方安装步骤 |
 | AI 阅读助手独立模块 | 1.3.7 | [模块 ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/1cf121c76071af57022cd1adc1377c12a0288797/downloads/ai-reading-assistant-1.3.7.zip) | [模块说明](docs/ai-reading-assistant.md) |
 | ScienceDirect → Typora | 0.5.17 | [扩展 ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/b9b23f3ef5e24c009a8510ec105c72b4ff895cc5/downloads/sciencedirect-typora-exporter-v0.5.17.zip) | [扩展安装](docs/sciencedirect-typora-exporter.md) |
 | 科研 Python 绘图 Skill | 1.1.0 | [Skill ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/b9b23f3ef5e24c009a8510ec105c72b4ff895cc5/downloads/scientific-python-plotting.zip) | [技能导入](docs/scientific-python-plotting.md) |
@@ -32,9 +32,12 @@ AI 窗口复用工具栏的公共拖动实现；旧工具栏按需加载兼容�
 
 [100 条名句清单](docs/ai-welcome-quotes.md)
 
-## 1.114.14 统一拖动支持
+## 1.114.15 直接拖动与顶部吸附
 
-- 合并侧栏、工具栏和 AI 窗口的逐帧调度、遮罩及公共样式，各窗口仍独立处理位置和大小。
+- 移除工具栏旁的独立拖柄和固定按钮，直接按住工具条空白处即可拖动。
+- 拖到顶部附近显示吸附提示，松开后固定；移出吸附区域后松开保持浮动。
+- 保留按钮点击、Esc 取消和位置记忆，浮动与固定状态均可在重启后恢复。
+- 沿用侧栏、工具栏和 AI 窗口的公共拖动支持，减少重复代码和样式。
 - 新工具栏兼容旧 AI，新 AI 兼容 1.114.3 起的工具栏；不安装或停用 AI 也保留主程序拖动支持。
 
 - 未安装 AI 阅读助手时，侧栏与正文边界同步移动，消除拉伸延迟。
@@ -42,7 +45,7 @@ AI 窗口复用工具栏的公共拖动实现；旧工具栏按需加载兼容�
 - 移除顶部重复的插件市场入口，统一从“更多 → 插件市场”进入。
 - 首次安装的关系图谱默认浅色；已有配色选择保留。
 
-拖动工具栏左侧六点手柄或空白处可浮动，旁边按钮可固定回顶部。重新安装 Typora 后，可再次运行安装包中的 install.cmd 恢复工具栏。
+工具条获得键盘焦点后可用方向键移动，Home 固定到顶部。重新安装 Typora 后，可再次运行安装包中的 install.cmd 恢复工具栏。
 
 打开“更多 → 插件市场 → 工具栏更新”自动检查；下载校验后选择“退出并完成安装”。安装成功后自动打开 Typora。AI 模块独立管理。[更新流程说明](docs/toolbar-updates.md)
 
@@ -56,7 +59,7 @@ AI 窗口复用工具栏的公共拖动实现；旧工具栏按需加载兼容�
 - ScienceDirect 扩展与工具栏通过端口 23120 连接，两端需要匹配更新。
 - 绘图 Skill 同步当前规范与 Illustrator 编辑参考。
 
-验证：94 项相关测试通过；隔离 Typora 验证未安装 AI、新工具栏配新旧 AI、1.114.3 工具栏配新 AI，以及拖动取消、设置位置保存、连续启停和拖动中停用清理。明暗及 360px 窗口已检查；安装包全部 528 项文件校验通过。
+验证：68 项相关测试通过；隔离 Typora 验证未安装、启用和停用 AI 时的直接拖动、顶部吸附、Esc 取消及按钮点击，浮动和固定状态均经过重启验证。明暗及 360px 窗口已检查；安装包全部 528 项文件校验通过。
 
 ## 官方模块市场
 
