@@ -1,8 +1,16 @@
-# ScienceDirect → Typora 0.5.17
+# ScienceDirect → Typora 0.5.18
 
 将当前可访问的 ScienceDirect 论文保存为 Markdown、本地图片、补充材料与引用索引。可下载 ZIP，或配对本机 Typora 知识库后直接保存。无需 API Key，也不会绕过网站访问权限。
 
-[下载扩展 ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/b9b23f3ef5e24c009a8510ec105c72b4ff895cc5/downloads/sciencedirect-typora-exporter-v0.5.17.zip)。
+[下载扩展 ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/5a5c763ef936718137b8e6a5459ed92a9b6ff0e4/downloads/sciencedirect-typora-exporter-v0.5.18.zip)。
+
+## 0.5.18 公式表格修复
+
+含 MathML / TeX 公式的表格导出为可编辑 Markdown，修复公式显示为原文、点击后进入 HTML 块编辑的问题。跨行和跨列内容展开到对应单元格，多层表头合并；保留空白格、引用和表尾。无公式的复杂表格仍保留原合并结构。
+
+Typora 需开启“偏好设置 → Markdown → 数学公式 → 内联公式”。重新加载扩展、刷新论文页并重新抓取后生效；已有文献不会自动改写。
+
+75 项扩展测试通过。已用目标论文 Table 2 的导出样本验证 30 行数据、62 处源公式和 29 个引用链接，并在隔离原生 Typora 中确认渲染和单元格编辑；本轮未重新验证在线全文抓取。
 
 ## 安装与更新
 
