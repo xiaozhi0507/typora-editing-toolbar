@@ -2,7 +2,7 @@
 
 最低工具栏版本：1.114.3。
 
-[下载独立模块](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/b9b23f3ef5e24c009a8510ec105c72b4ff895cc5/downloads/ai-reading-assistant-1.3.6.zip) · [备用下载](https://github.com/xiaozhi0507/typora-editing-toolbar/releases/download/ai-reading-assistant-v1.3.6/ai-reading-assistant-1.3.6.zip)。在工具栏“插件市场”检查更新；未安装时先安装，再信任并启用。主安装包不预装 AI 模块。
+[下载独立模块](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/b9b23f3ef5e24c009a8510ec105c72b4ff895cc5/downloads/ai-reading-assistant-1.3.6.zip)。在工具栏“插件市场”检查更新；未安装时先安装，再信任并启用。主安装包不预装 AI 模块。
 
 ## 欢迎页
 

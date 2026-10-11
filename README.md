@@ -6,10 +6,10 @@ Windows 工具栏、AI 阅读助手、ScienceDirect 抓取扩展与科研绘图�
 
 | 内容 | 版本 | 下载 | 说明 |
 | --- | --- | --- | --- |
-| Typora 编辑工具栏与完整源码 | 1.114.12 | [安装 ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/b9b23f3ef5e24c009a8510ec105c72b4ff895cc5/downloads/typora-editing-toolbar-2026-10-11-v1.114.12.zip) · [备用](https://github.com/xiaozhi0507/typora-editing-toolbar/releases/download/toolbar-v1.114.12/typora-editing-toolbar-2026-10-11-v1.114.12.zip) | 下方安装步骤 |
-| AI 阅读助手独立模块 | 1.3.6 | [模块 ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/b9b23f3ef5e24c009a8510ec105c72b4ff895cc5/downloads/ai-reading-assistant-1.3.6.zip) · [备用](https://github.com/xiaozhi0507/typora-editing-toolbar/releases/download/ai-reading-assistant-v1.3.6/ai-reading-assistant-1.3.6.zip) | [模块说明](docs/ai-reading-assistant.md) |
-| ScienceDirect → Typora | 0.5.17 | [扩展 ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/b9b23f3ef5e24c009a8510ec105c72b4ff895cc5/downloads/sciencedirect-typora-exporter-v0.5.17.zip) · [备用](https://github.com/xiaozhi0507/typora-editing-toolbar/releases/download/sciencedirect-typora-exporter-v0.5.17/sciencedirect-typora-exporter-v0.5.17.zip) | [扩展安装](docs/sciencedirect-typora-exporter.md) |
-| 科研 Python 绘图 Skill | 1.1.0 | [Skill ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/b9b23f3ef5e24c009a8510ec105c72b4ff895cc5/downloads/scientific-python-plotting.zip) · [备用](https://github.com/xiaozhi0507/typora-editing-toolbar/releases/download/skill-scientific-python-plotting-v1.1.0/scientific-python-plotting.zip) | [技能导入](docs/scientific-python-plotting.md) |
+| Typora 编辑工具栏与完整源码 | 1.114.12 | [安装 ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/b9b23f3ef5e24c009a8510ec105c72b4ff895cc5/downloads/typora-editing-toolbar-2026-10-11-v1.114.12.zip) | 下方安装步骤 |
+| AI 阅读助手独立模块 | 1.3.6 | [模块 ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/b9b23f3ef5e24c009a8510ec105c72b4ff895cc5/downloads/ai-reading-assistant-1.3.6.zip) | [模块说明](docs/ai-reading-assistant.md) |
+| ScienceDirect → Typora | 0.5.17 | [扩展 ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/b9b23f3ef5e24c009a8510ec105c72b4ff895cc5/downloads/sciencedirect-typora-exporter-v0.5.17.zip) | [扩展安装](docs/sciencedirect-typora-exporter.md) |
+| 科研 Python 绘图 Skill | 1.1.0 | [Skill ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/b9b23f3ef5e24c009a8510ec105c72b4ff895cc5/downloads/scientific-python-plotting.zip) | [技能导入](docs/scientific-python-plotting.md) |
 
 [校验文件](downloads) · [版本记录与 Release 附件](https://github.com/xiaozhi0507/typora-editing-toolbar/releases)
 

@@ -2,7 +2,7 @@
 
 将当前可访问的 ScienceDirect 论文保存为 Markdown、本地图片、补充材料与引用索引。可下载 ZIP，或配对本机 Typora 知识库后直接保存。无需 API Key，也不会绕过网站访问权限。
 
-[下载扩展 ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/b9b23f3ef5e24c009a8510ec105c72b4ff895cc5/downloads/sciencedirect-typora-exporter-v0.5.17.zip) · [备用下载](https://github.com/xiaozhi0507/typora-editing-toolbar/releases/download/sciencedirect-typora-exporter-v0.5.17/sciencedirect-typora-exporter-v0.5.17.zip)。
+[下载扩展 ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/b9b23f3ef5e24c009a8510ec105c72b4ff895cc5/downloads/sciencedirect-typora-exporter-v0.5.17.zip)。
 
 ## 安装与更新
 
