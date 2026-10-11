@@ -6,9 +6,9 @@ Windows 工具栏、AI 阅读助手、ScienceDirect 抓取扩展与科研绘图�
 
 | 内容 | 版本 | 下载 | 说明 |
 | --- | --- | --- | --- |
-| Typora 编辑工具栏与完整源码 | 1.114.10 | [安装 ZIP](downloads/typora-editing-toolbar-2026-10-11-v1.114.10.zip?raw=true) | 下方安装步骤 |
-| AI 阅读助手独立模块 | 1.3.5 | [模块 ZIP](downloads/ai-reading-assistant-1.3.5.zip?raw=true) | [模块说明](docs/ai-reading-assistant.md) |
-| ScienceDirect → Typora | 0.5.14 | [扩展 ZIP](downloads/sciencedirect-typora-exporter-v0.5.14.zip?raw=true) | [扩展安装](docs/sciencedirect-typora-exporter.md) |
+| Typora 编辑工具栏与完整源码 | 1.114.12 | [安装 ZIP](downloads/typora-editing-toolbar-2026-10-11-v1.114.12.zip?raw=true) | 下方安装步骤 |
+| AI 阅读助手独立模块 | 1.3.6 | [模块 ZIP](downloads/ai-reading-assistant-1.3.6.zip?raw=true) | [模块说明](docs/ai-reading-assistant.md) |
+| ScienceDirect → Typora | 0.5.17 | [扩展 ZIP](downloads/sciencedirect-typora-exporter-v0.5.17.zip?raw=true) | [扩展安装](docs/sciencedirect-typora-exporter.md) |
 | 科研 Python 绘图 Skill | 1.1.0 | [Skill ZIP](downloads/scientific-python-plotting.zip?raw=true) | [技能导入](docs/scientific-python-plotting.md) |
 
 [校验文件](downloads) · [版本记录与 Release 附件](https://github.com/xiaozhi0507/typora-editing-toolbar/releases)
@@ -24,29 +24,31 @@ Windows 工具栏、AI 阅读助手、ScienceDirect 抓取扩展与科研绘图�
 
 面向 Windows，安装包测试宿主为 Typora 1.14.10。
 
-## AI 1.3.5 更新测试
+## AI 1.3.6 更新
 
-主程序为 1.114.3 或更新版本、AI 当前为 1.3.3 时，打开插件市场检查更新，应显示 AI 1.3.5。点击“更新”后重新打开助手，欢迎页会显示带出处的随机名句。每次打开助手更换一句，同一页面停留期间保持不变。更新不会自动安装 Python 或改动已有环境。
+欢迎页名言与经典诗词扩充到 100 条，出处和作者单独显示。重新打开文档后打开助手、再次打开助手或新建对话时换句，避免连续重复。已有对话不受影响。最低工具栏版本仍为 1.114.3，在“插件市场 → 浏览市场”更新独立模块。
 
-## 1.114.10 更新入口
+[100 条名句清单](docs/ai-welcome-quotes.md)
 
-1.114.8 起，打开插件市场或工具栏更新页会自动检查。点击“更新”下载并校验，然后在原生对话框选择“退出并完成安装”或“取消”。确认后 Typora 按原生流程提示保存未保存文档，全部窗口退出后安装，重新打开后显示“已是最新版本”。AI 模块仍单独管理。
+## 1.114.12 更新流程测试
 
-1.114.6 / 1.114.7 升级到本版时，仍使用旧版界面的“下载更新 → 退出后安装”，保存文档并退出所有 Typora 窗口。
+本版用于验证本地能否顺畅完成在线更新。打开“插件市场 → 工具栏更新”自动检查；有新版时点击“更新”，下载校验完成后选择“退出并完成安装”。Typora 按原生流程处理未保存文档，所有窗口退出后安装，安装成功后自动打开 Typora。重开后显示“已是最新版本”和“无需更新”。
 
-打开页面自动检查更新，不再显示“检查更新”按钮。有新版时显示“更新”，最新版显示“无需更新”；网络恢复后可重新进入页面检查。
+包含 1.114.11 的安装启动修复：先确认后台安装任务就绪，再请求退出；顶部统一显示状态，去掉卡片内重复通知。
 
-抓取扩展 0.5.14 增加备用更新地址及商店原生检查。[商店上架资料](docs/exporter-store-submission.md)已准备，尚未通过商店审核。解压版升级仍需替换原 extension 文件夹并重新加载。
+1.114.6 / 1.114.7 升级时仍使用旧界面的“下载更新 → 退出后安装”。自动重开等流程由发起更新的旧版本控制，旧版首次升级未必具有全部新行为。
+
+抓取扩展 0.5.17 修复更新检查请求并调整更新区布局。[商店上架资料](docs/exporter-store-submission.md)已准备，尚未通过商店审核。解压版升级仍需替换原 extension 文件夹并重新加载。
 
 ## 本轮变化
 
-- AI 欢迎页内置 16 条古典名言与诗句，出处独立显示；支持项目环境管理和四种随机回答流光效果。
+- AI 欢迎页内置 100 条古典名言与诗句，出处独立显示；支持项目环境管理和四种随机回答流光效果。
 - 工具栏分组默认收起，勾选变化保留设置列表条目，不再持续高亮。
 - 主程序独立于 AI 模块；新电脑需单独安装并启用 AI。引用数在配置相关 API 后显示。
 - ScienceDirect 扩展与工具栏通过端口 23120 连接，两端需要匹配更新。
 - 绘图 Skill 同步当前规范与 Illustrator 编辑参考。
 
-验证：本版 26 项相关测试通过；隔离 Typora 中验证了最新版状态及新版可用时的按钮布局、明暗样式和 360px 窄窗口。安装包清单与 SHA-256 已核验。本次不覆盖本机安装。
+验证：61 项相关测试通过；隔离 Typora 中验证全部 100 条名句、重开换句、明暗样式和 360px 窄窗口。三个安装包内容与 SHA-256 已核验。本次仅发布，不覆盖本机安装。
 
 ## 官方模块市场
 
