@@ -2,34 +2,34 @@
   "schemaVersion": 1,
   "releases": [
     {
-      "tag": "toolbar-v1.114.16",
-      "title": "Typora 编辑工具栏 1.114.16 · 文献切换与备份修复",
-      "body": "## 更新内容\n- 修复从知识库打开文献时，文献与知识库之间短暂闪回的问题；打开失败或取消时恢复知识库。\n- 修复 Google Drive 备份将 LaTeX 公式误判为本地绝对路径的问题，保留真实绝对路径检查及图片、引用和附件备份。\n- 保留工具条直接拖动与顶部吸附；AI 阅读助手继续独立使用 1.3.7。\n- Google Drive 备份使用独立授权，无需额外安装 Codex Google Drive 插件。",
+      "tag": "toolbar-v1.114.17",
+      "title": "Typora 编辑工具栏 1.114.17 · 期刊设置对齐",
+      "body": "## 更新内容\n- 拖动条目详情或分类侧栏时，列表各列平均分担宽度变化；保留最小宽度、手动列宽、列隐藏及重启恢复。\n- 统一期刊标签列设置中的标签左侧起点及输入内容内边距，修复 Source、API Key、影响因子与下方项目未对齐的问题。\n- 配套 AI 阅读助手 1.3.8 精简插件详情与登录设置，缩小连接方式弹窗。\n- 保留知识库自身的 Google Drive 备份功能、文献切换和公式链接修复。\n\nAI 阅读助手需在插件市场单独更新至 1.3.8。主程序不分发个人账户、插件或 Skill 配置。",
       "latest": true,
       "assets": [
         {
-          "path": "downloads/typora-editing-toolbar-2026-10-11-v1.114.16.zip",
-          "sha256": "8aff75bd057cba6d215def84efca26ce2b5c76cf1ee03fbba9fb9d7636ae8945"
+          "path": "downloads/typora-editing-toolbar-2026-10-11-v1.114.17.zip",
+          "sha256": "b708d7761d3b284a8d488f347047b276dbc0590118497aa73223151c3e04a365"
         },
         {
-          "path": "downloads/typora-editing-toolbar-2026-10-11-v1.114.16.zip.sha256",
-          "sha256": "64d5160f1384a4164f1e74a2f579a47ff586454923d58d5b4312c72aadef204a"
+          "path": "downloads/typora-editing-toolbar-2026-10-11-v1.114.17.zip.sha256",
+          "sha256": "3b62e0a5a4082380bb23568218e9007cf6d2cfbf87a6658d663f0a8becd5df8c"
         }
       ]
     },
     {
-      "tag": "sciencedirect-typora-exporter-v0.5.18",
-      "title": "ScienceDirect → Typora 0.5.18 · 公式表格渲染修复",
-      "body": "## 更新内容\n- 含公式的表格导出为可编辑 Markdown，修复 Table 2 中公式不渲染、点击后进入 HTML 块编辑的问题。\n- 展开跨行和跨列单元格，合并多层表头，保留空白格、表尾和引用链接；无公式的复杂表格继续保留合并结构。\n- 表格内块公式转换为行内公式，正确处理公式竖线，避免表格错列。\n\n## 更新后使用\n替换原 extension 文件夹内容，在浏览器扩展管理页重新加载，刷新论文页后重新抓取。已有文献不会自动改写；Typora 需开启内联公式。",
+      "tag": "ai-reading-assistant-v1.3.8",
+      "title": "AI 阅读助手 1.3.8 · 插件与连接界面精简",
+      "body": "## 更新内容\n- 移除插件详情重复的连接说明、断开说明和登录设置中的辅助小字，共用布局也适用于后续导入的插件。\n- 移除 Google Drive 插件详情中的重复知识库备份区块，知识库原有备份功能保留。\n- 缩小连接方式弹窗，保留账户管理、授权配置和操作错误提示。\n- 最低主程序版本保持 1.114.3。\n\nPlugin Creator 可导入本机创建、修改和提交准备技能；Codex 云端创建及发布服务未接入。",
       "latest": false,
       "assets": [
         {
-          "path": "downloads/sciencedirect-typora-exporter-v0.5.18.zip",
-          "sha256": "37300b8f96d027dc30664326b0fd4c61ffcd51a317a92a053c7ce8c3eac081e8"
+          "path": "downloads/ai-reading-assistant-1.3.8.zip",
+          "sha256": "bd9ffbacb4f5ba10657dfa1a866f01dbaa7abd637956f0730aa6dd4d7de5af89"
         },
         {
-          "path": "downloads/sciencedirect-typora-exporter-v0.5.18.zip.sha256",
-          "sha256": "e69c159f7421f44561ac9698704a363cedaebce2a4a35945894d5f568e43f031"
+          "path": "downloads/ai-reading-assistant-1.3.8.zip.sha256",
+          "sha256": "e3d3ed9f6c7b1f4f685d33a367f3f22170c0708888cd33f1583c91a603fb707f"
         }
       ]
     }
