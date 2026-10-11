@@ -6,7 +6,7 @@ Windows 工具栏、AI 阅读助手、ScienceDirect 抓取扩展与科研绘图�
 
 | 内容 | 版本 | 下载 | 说明 |
 | --- | --- | --- | --- |
-| Typora 编辑工具栏与完整源码 | 1.114.12 | [安装 ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/b9b23f3ef5e24c009a8510ec105c72b4ff895cc5/downloads/typora-editing-toolbar-2026-10-11-v1.114.12.zip) | 下方安装步骤 |
+| Typora 编辑工具栏与完整源码 | 1.114.13 | [安装 ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/0b4b99d83385f4f2504b12889d45e06fd32f0ef5/downloads/typora-editing-toolbar-2026-10-11-v1.114.13.zip) | 下方安装步骤 |
 | AI 阅读助手独立模块 | 1.3.6 | [模块 ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/b9b23f3ef5e24c009a8510ec105c72b4ff895cc5/downloads/ai-reading-assistant-1.3.6.zip) | [模块说明](docs/ai-reading-assistant.md) |
 | ScienceDirect → Typora | 0.5.17 | [扩展 ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/b9b23f3ef5e24c009a8510ec105c72b4ff895cc5/downloads/sciencedirect-typora-exporter-v0.5.17.zip) | [扩展安装](docs/sciencedirect-typora-exporter.md) |
 | 科研 Python 绘图 Skill | 1.1.0 | [Skill ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/b9b23f3ef5e24c009a8510ec105c72b4ff895cc5/downloads/scientific-python-plotting.zip) | [技能导入](docs/scientific-python-plotting.md) |
@@ -30,13 +30,16 @@ Windows 工具栏、AI 阅读助手、ScienceDirect 抓取扩展与科研绘图�
 
 [100 条名句清单](docs/ai-welcome-quotes.md)
 
-## 1.114.12 更新流程测试
+## 1.114.13 侧栏与浮动工具栏修复
 
-本版用于验证本地能否顺畅完成在线更新。打开“插件市场 → 工具栏更新”自动检查；有新版时点击“更新”，下载校验完成后选择“退出并完成安装”。Typora 按原生流程处理未保存文档，所有窗口退出后安装，安装成功后自动打开 Typora。重开后显示“已是最新版本”和“无需更新”。
+- 未安装 AI 阅读助手时，侧栏与正文边界同步移动，消除拉伸延迟。
+- 恢复顶部工具栏拖动与浮动，位置在重启后保留。
+- 移除顶部重复的插件市场入口，统一从“更多 → 插件市场”进入。
+- 首次安装的关系图谱默认浅色；已有配色选择保留。
 
-包含 1.114.11 的安装启动修复：先确认后台安装任务就绪，再请求退出；顶部统一显示状态，去掉卡片内重复通知。
+拖动工具栏左侧六点手柄或空白处可浮动，旁边按钮可固定回顶部。重新安装 Typora 后，可再次运行安装包中的 install.cmd 恢复工具栏。
 
-1.114.6 / 1.114.7 升级时仍使用旧界面的“下载更新 → 退出后安装”。自动重开等流程由发起更新的旧版本控制，旧版首次升级未必具有全部新行为。
+打开“更多 → 插件市场 → 工具栏更新”自动检查；下载校验后选择“退出并完成安装”。安装成功后自动打开 Typora。AI 模块独立管理。[更新流程说明](docs/toolbar-updates.md)
 
 抓取扩展 0.5.17 修复更新检查请求并调整更新区布局。[商店上架资料](docs/exporter-store-submission.md)已准备，尚未通过商店审核。解压版升级仍需替换原 extension 文件夹并重新加载。
 
@@ -48,7 +51,7 @@ Windows 工具栏、AI 阅读助手、ScienceDirect 抓取扩展与科研绘图�
 - ScienceDirect 扩展与工具栏通过端口 23120 连接，两端需要匹配更新。
 - 绘图 Skill 同步当前规范与 Illustrator 编辑参考。
 
-验证：61 项相关测试通过；隔离 Typora 中验证全部 100 条名句、重开换句、明暗样式和 360px 窄窗口。三个安装包内容与 SHA-256 已核验。本次仅发布，不覆盖本机安装。
+验证：40 项相关测试通过；隔离 Typora 中验证未安装 AI 时侧栏同步、工具栏拖动与重启位置记忆、明暗样式和 360px 窄窗口。安装包全部 524 项文件校验通过。
 
 ## 官方模块市场
 
