@@ -2,18 +2,34 @@
   "schemaVersion": 1,
   "releases": [
     {
-      "tag": "toolbar-v1.114.15",
-      "title": "Typora 编辑工具栏 1.114.15 · 直接拖动与顶部吸附",
-      "body": "## 更新内容\n- 移除工具栏旁的独立拖柄和固定按钮，直接按住工具条空白处即可拖动。\n- 拖到顶部附近显示吸附提示，松开后固定；移出吸附区域后松开保持浮动。\n- 保留按钮点击、Esc 取消和位置记忆，浮动与固定状态均可在重启后恢复。\n- 未安装、启用或停用 AI 阅读助手时均可使用；AI 模块保持 1.3.7。",
+      "tag": "toolbar-v1.114.16",
+      "title": "Typora 编辑工具栏 1.114.16 · 文献切换与备份修复",
+      "body": "## 更新内容\n- 修复从知识库打开文献时，文献与知识库之间短暂闪回的问题；打开失败或取消时恢复知识库。\n- 修复 Google Drive 备份将 LaTeX 公式误判为本地绝对路径的问题，保留真实绝对路径检查及图片、引用和附件备份。\n- 保留工具条直接拖动与顶部吸附；AI 阅读助手继续独立使用 1.3.7。\n- Google Drive 备份使用独立授权，无需额外安装 Codex Google Drive 插件。",
       "latest": true,
       "assets": [
         {
-          "path": "downloads/typora-editing-toolbar-2026-10-11-v1.114.15.zip",
-          "sha256": "1af13088b370558130c2a1fa2d1e3a78d55ee6a880b49ba6ee0c44a9865d0369"
+          "path": "downloads/typora-editing-toolbar-2026-10-11-v1.114.16.zip",
+          "sha256": "8aff75bd057cba6d215def84efca26ce2b5c76cf1ee03fbba9fb9d7636ae8945"
         },
         {
-          "path": "downloads/typora-editing-toolbar-2026-10-11-v1.114.15.zip.sha256",
-          "sha256": "e4dbeaca0704c7ed5d0a1ad11a38cb43049e16f30c7586c322587fa9d60f8c52"
+          "path": "downloads/typora-editing-toolbar-2026-10-11-v1.114.16.zip.sha256",
+          "sha256": "64d5160f1384a4164f1e74a2f579a47ff586454923d58d5b4312c72aadef204a"
+        }
+      ]
+    },
+    {
+      "tag": "sciencedirect-typora-exporter-v0.5.18",
+      "title": "ScienceDirect → Typora 0.5.18 · 公式表格渲染修复",
+      "body": "## 更新内容\n- 含公式的表格导出为可编辑 Markdown，修复 Table 2 中公式不渲染、点击后进入 HTML 块编辑的问题。\n- 展开跨行和跨列单元格，合并多层表头，保留空白格、表尾和引用链接；无公式的复杂表格继续保留合并结构。\n- 表格内块公式转换为行内公式，正确处理公式竖线，避免表格错列。\n\n## 更新后使用\n替换原 extension 文件夹内容，在浏览器扩展管理页重新加载，刷新论文页后重新抓取。已有文献不会自动改写；Typora 需开启内联公式。",
+      "latest": false,
+      "assets": [
+        {
+          "path": "downloads/sciencedirect-typora-exporter-v0.5.18.zip",
+          "sha256": "37300b8f96d027dc30664326b0fd4c61ffcd51a317a92a053c7ce8c3eac081e8"
+        },
+        {
+          "path": "downloads/sciencedirect-typora-exporter-v0.5.18.zip.sha256",
+          "sha256": "e69c159f7421f44561ac9698704a363cedaebce2a4a35945894d5f568e43f031"
         }
       ]
     }
