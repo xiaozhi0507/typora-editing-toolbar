@@ -2,34 +2,18 @@
   "schemaVersion": 1,
   "releases": [
     {
-      "tag": "ai-reading-assistant-v1.3.7",
-      "title": "AI 阅读助手 1.3.7 · 拖动兼容整理",
-      "body": "## 更新内容\n- 优先复用工具栏的公共拖动实现，减少重复调度和样式。\n- 在旧工具栏上按需加载兼容代码，停用时清理，最低版本保持 1.114.3。\n- 保留现有配置、对话和 100 条欢迎诗句。",
-      "latest": false,
-      "assets": [
-        {
-          "path": "downloads/ai-reading-assistant-1.3.7.zip",
-          "sha256": "f93299f4e93d8e1509141946d6b8abc95d667d6c9eb7619e51be0934b28fb507"
-        },
-        {
-          "path": "downloads/ai-reading-assistant-1.3.7.zip.sha256",
-          "sha256": "79e6c11d05b16bdf862ccf12a79dca8ab16e2837b83b71ae75282eab354f37f1"
-        }
-      ]
-    },
-    {
-      "tag": "toolbar-v1.114.14",
-      "title": "Typora 编辑工具栏 1.114.14 · 统一拖动支持",
-      "body": "## 更新内容\n- 统一侧栏、顶部工具栏和 AI 窗口的逐帧调度、拖动遮罩及公共样式。\n- 未安装、启用或停用 AI 时，主程序均独立提供侧栏与工具栏拖动支持。\n- 保留 Esc 取消、浮动位置记忆；拖动中停用 AI 会正确清理遮罩。\n- 新工具栏兼容旧 AI；AI 1.3.7 在旧工具栏上按需加载兼容实现，最低版本仍为 1.114.3。",
+      "tag": "toolbar-v1.114.15",
+      "title": "Typora 编辑工具栏 1.114.15 · 直接拖动与顶部吸附",
+      "body": "## 更新内容\n- 移除工具栏旁的独立拖柄和固定按钮，直接按住工具条空白处即可拖动。\n- 拖到顶部附近显示吸附提示，松开后固定；移出吸附区域后松开保持浮动。\n- 保留按钮点击、Esc 取消和位置记忆，浮动与固定状态均可在重启后恢复。\n- 未安装、启用或停用 AI 阅读助手时均可使用；AI 模块保持 1.3.7。",
       "latest": true,
       "assets": [
         {
-          "path": "downloads/typora-editing-toolbar-2026-10-11-v1.114.14.zip",
-          "sha256": "e60208381f21214b90a5960db52bc5d6a90d20a3de26b6409e6716f98b20a5ba"
+          "path": "downloads/typora-editing-toolbar-2026-10-11-v1.114.15.zip",
+          "sha256": "1af13088b370558130c2a1fa2d1e3a78d55ee6a880b49ba6ee0c44a9865d0369"
         },
         {
-          "path": "downloads/typora-editing-toolbar-2026-10-11-v1.114.14.zip.sha256",
-          "sha256": "72e28209e27ff21a0e7cad4276f8f4516856ea77424524dd7af10bdc880cbb64"
+          "path": "downloads/typora-editing-toolbar-2026-10-11-v1.114.15.zip.sha256",
+          "sha256": "e4dbeaca0704c7ed5d0a1ad11a38cb43049e16f30c7586c322587fa9d60f8c52"
         }
       ]
     }
