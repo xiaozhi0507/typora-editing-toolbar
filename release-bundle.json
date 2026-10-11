@@ -2,50 +2,18 @@
   "schemaVersion": 1,
   "releases": [
     {
-      "tag": "ai-reading-assistant-v1.3.6",
-      "title": "AI 阅读助手 1.3.6 · 100 条经典名句",
-      "body": "## 更新内容\n- 欢迎页名言与经典诗词由 16 条扩充至 100 条，作品名与作者单独显示。\n- 重新打开文档后打开助手、再次打开助手或新建对话时换句，避免连续重复。\n- 保留已有对话、模型配置和项目环境。\n\n最低工具栏版本：1.114.3。",
-      "latest": false,
-      "assets": [
-        {
-          "path": "downloads/ai-reading-assistant-1.3.6.zip",
-          "sha256": "cb32b67af0a2c1948a7091b1bae6e94b592d66a8a121a0a4d67d6ea5d60c898a"
-        },
-        {
-          "path": "downloads/ai-reading-assistant-1.3.6.zip.sha256",
-          "sha256": "072d87ffb82bdcf5a8e1fab8df3bac9117e86b7afda80c6eb67c1994c0b88c53"
-        }
-      ]
-    },
-    {
-      "tag": "sciencedirect-typora-exporter-v0.5.17",
-      "title": "ScienceDirect → Typora 0.5.17",
-      "body": "## 更新内容\n- 修复扩展更新请求的原生 fetch 调用问题，优先使用 GitHub API，并提供备用地址与重试。\n- 版本号放在“扩展更新”标题旁，状态放在右上角，“检查更新”位于状态下方。\n- 移除重复的小字说明，保留自动检查开关。\n\nGitHub 解压版：替换原 extension 文件夹内容，在扩展管理页重新加载。商店自动安装更新仍需商店审核与上架，本次不表示已上架。",
-      "latest": false,
-      "assets": [
-        {
-          "path": "downloads/sciencedirect-typora-exporter-v0.5.17.zip",
-          "sha256": "dec58867501c7fd620b3c078db1a56a7603dc9dbef922fe2c9d3934abcc723ab"
-        },
-        {
-          "path": "downloads/sciencedirect-typora-exporter-v0.5.17.zip.sha256",
-          "sha256": "2bc25310bc5b9a83e7b1f7f88067069f9b2e209c8499e52650517b16ca3240be"
-        }
-      ]
-    },
-    {
-      "tag": "toolbar-v1.114.12",
-      "title": "Typora 编辑工具栏 1.114.12 · 更新流程测试版",
-      "body": "## 更新内容\n- 本版用于验证本地更新流程：自动检测、下载校验、退出安装及完成后自动打开 Typora。\n- 包含 1.114.11 的安装启动修复：安装任务就绪后才请求退出，避免出现“安装任务未能启动”。\n- 更新状态统一显示在页面顶部，移除卡片内重复通知。\n- AI 阅读助手 1.3.6 独立更新，欢迎名句扩充至 100 条。",
+      "tag": "toolbar-v1.114.13",
+      "title": "Typora 编辑工具栏 1.114.13 · 侧栏与浮动工具栏修复",
+      "body": "## 更新内容\n- 修复未安装 AI 阅读助手时左侧栏拉伸延迟，侧栏与正文边界同步移动。\n- 恢复顶部工具栏拖动、浮动、固定切换，浮动位置在重启后保留。\n- 移除顶部重复的插件市场按钮，统一从“更多 → 插件市场”进入。\n- 首次安装的关系图谱默认浅色；已有配色选择保留。\n\n拖动左侧六点手柄或工具栏空白处可浮动，旁边按钮可固定回顶部。重新安装 Typora 后可再次运行 install.cmd 恢复工具栏。",
       "latest": true,
       "assets": [
         {
-          "path": "downloads/typora-editing-toolbar-2026-10-11-v1.114.12.zip",
-          "sha256": "1f7dccce90196319ffeab669eabbd121858a6168d2e9e4f38c9a5f0d99b5c4b7"
+          "path": "downloads/typora-editing-toolbar-2026-10-11-v1.114.13.zip",
+          "sha256": "39eba15565062bdfd08e7ebc408b224e76077c449d47ed2a59f29785b9df09b7"
         },
         {
-          "path": "downloads/typora-editing-toolbar-2026-10-11-v1.114.12.zip.sha256",
-          "sha256": "4ef9a23ddef8cf79f7c57084fc827b5ecf905272416a41a2fb35ac65873778e6"
+          "path": "downloads/typora-editing-toolbar-2026-10-11-v1.114.13.zip.sha256",
+          "sha256": "0c28bae2bb156270b0f4c5f3755d016cfeaea0297668fe6aace0b73c318a6bb5"
         }
       ]
     }
