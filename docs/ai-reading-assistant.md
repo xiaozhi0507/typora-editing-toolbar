@@ -1,8 +1,14 @@
-# AI 阅读助手 1.3.7
+# AI 阅读助手 1.3.8
 
 最低工具栏版本：1.114.3。
 
-[下载独立模块](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/1cf121c76071af57022cd1adc1377c12a0288797/downloads/ai-reading-assistant-1.3.7.zip)。在工具栏“插件市场”检查更新；未安装时先安装，再信任并启用。主安装包不预装 AI 模块。
+[下载独立模块](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/b73c963e6947ceb438add238d62b60f8b759728d/downloads/ai-reading-assistant-1.3.8.zip)。在工具栏“插件市场”检查更新；未安装时先安装，再信任并启用。主安装包不预装 AI 模块。
+
+## 1.3.8 插件与连接界面
+
+插件详情共用精简布局，移除重复的连接、断开和登录辅助说明；收紧连接方式弹窗。Google Drive 插件详情不再重复展示知识库备份入口，知识库自身的备份功能保留。账户、授权配置、对话与技能保持不变。
+
+Plugin Creator 可在本机导入 create-plugin、update-plugin、prepare-plugin-submission 三个技能。使用 Typora 已提供的项目工具处理本地插件；Codex 云端创建和发布服务未接入。个人安装的插件与技能不打入公开模块包。
 
 ## 1.3.7 拖动整理
 
@@ -24,4 +30,4 @@
 
 ## 更新按钮
 
-工具栏 1.114.5 起更新按钮只显示在“浏览市场”；AI 1.3.7 仍兼容工具栏 1.114.3。旧主程序的“已安装”按钮不会因单独升级 AI 而改变。
+工具栏 1.114.5 起更新按钮只显示在“浏览市场”；AI 1.3.8 仍兼容工具栏 1.114.3。旧主程序的“已安装”按钮不会因单独升级 AI 而改变。

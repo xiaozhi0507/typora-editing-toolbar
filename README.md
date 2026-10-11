@@ -6,8 +6,8 @@ Windows 工具栏、AI 阅读助手、ScienceDirect 抓取扩展与科研绘图�
 
 | 内容 | 版本 | 下载 | 说明 |
 | --- | --- | --- | --- |
-| Typora 编辑工具栏与完整源码 | 1.114.16 | [安装 ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/5a5c763ef936718137b8e6a5459ed92a9b6ff0e4/downloads/typora-editing-toolbar-2026-10-11-v1.114.16.zip) | 下方安装步骤 |
-| AI 阅读助手独立模块 | 1.3.7 | [模块 ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/1cf121c76071af57022cd1adc1377c12a0288797/downloads/ai-reading-assistant-1.3.7.zip) | [模块说明](docs/ai-reading-assistant.md) |
+| Typora 编辑工具栏与完整源码 | 1.114.17 | [安装 ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/b73c963e6947ceb438add238d62b60f8b759728d/downloads/typora-editing-toolbar-2026-10-11-v1.114.17.zip) | 下方安装步骤 |
+| AI 阅读助手独立模块 | 1.3.8 | [模块 ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/b73c963e6947ceb438add238d62b60f8b759728d/downloads/ai-reading-assistant-1.3.8.zip) | [模块说明](docs/ai-reading-assistant.md) |
 | ScienceDirect → Typora | 0.5.18 | [扩展 ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/5a5c763ef936718137b8e6a5459ed92a9b6ff0e4/downloads/sciencedirect-typora-exporter-v0.5.18.zip) | [扩展安装](docs/sciencedirect-typora-exporter.md) |
 | 科研 Python 绘图 Skill | 1.1.0 | [Skill ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/b9b23f3ef5e24c009a8510ec105c72b4ff895cc5/downloads/scientific-python-plotting.zip) | [技能导入](docs/scientific-python-plotting.md) |
 
@@ -24,7 +24,13 @@ Windows 工具栏、AI 阅读助手、ScienceDirect 抓取扩展与科研绘图�
 
 面向 Windows，安装包测试宿主为 Typora 1.14.10。
 
-## AI 1.3.7 更新
+## AI 1.3.8 更新
+
+- 移除插件详情中重复的连接说明和断开提示；后续导入插件使用同一精简布局。
+- 移除 Google Drive 插件详情中重复的知识库备份区块，知识库备份功能保留。
+- 登录设置去掉辅助小字，连接方式弹窗收紧留白，账户管理和错误提示保留。
+- Plugin Creator 可导入本机的创建、修改与提交准备技能；Codex 云端创建与发布服务未接入。
+
 
 AI 窗口复用工具栏的公共拖动实现；旧工具栏按需加载兼容代码，停用时清理，最低版本保持 1.114.3。现有对话与配置保留。
 
@@ -32,11 +38,18 @@ AI 窗口复用工具栏的公共拖动实现；旧工具栏按需加载兼容�
 
 [100 条名句清单](docs/ai-welcome-quotes.md)
 
-## 1.114.16 文献切换与备份修复
+## 1.114.17 列宽联动与设置对齐
+
+- 拖宽右侧条目信息或分类侧栏时，中间各列平均收缩；拖窄时共同展开。
+- 达到最小宽度的列停止收缩，剩余变化由其他列承担；空间不足时保留横向滚动。
+- 保留手动列宽、列顺序、隐藏列、取消拖动与重启恢复；旧布局自动适配。
+- 期刊标签列设置中的 Source、API Key、影响因子和后续行统一纵向对齐。
+
+## 已有文献切换与备份修复
 
 - 修复从知识库打开文献时短暂闪回的问题；打开失败或取消时恢复知识库。
 - 修复 Google Drive 备份把 LaTeX 公式误判为绝对本地链接，继续检查真实的本地绝对路径，并保留图片、引用和附件备份。
-- Google Drive 备份使用独立的 Google 授权，不依赖 Codex Google Drive 插件；AI 阅读助手继续独立使用 1.3.7。
+- Google Drive 备份使用独立的 Google 授权，不依赖 Codex Google Drive 插件；AI 阅读助手独立更新。
 
 ## 工具栏拖动与顶部吸附
 
@@ -65,7 +78,7 @@ AI 窗口复用工具栏的公共拖动实现；旧工具栏按需加载兼容�
 - ScienceDirect 扩展与工具栏通过端口 23120 连接，两端需要匹配更新。
 - 绘图 Skill 同步当前规范与 Illustrator 编辑参考。
 
-验证：工具栏 121 项、抓取扩展 75 项测试通过；隔离原生 Typora 验证文献切换不闪回、失败恢复及窄窗口设置。目标 Table 2 的 30 行、62 处源公式、29 个引用链接保持完整，公式可渲染、单元格可直接编辑。工具栏 530 项清单文件与扩展 33 项文件全部核验；本轮未重新验证在线全文抓取。
+本版验证：162 项相关测试通过；原生 Typora 实测详情面板拖宽 160 像素时 8 列各缩小 20 像素，手动列宽、隐藏列、取消、键盘调整和重启恢复通过。插件设置完成宽窗口及 440 像素深色窗口检查，安装包清单与 SHA-256 已核验。抓取扩展 0.5.18 保持不变。
 
 ## 官方模块市场
 
