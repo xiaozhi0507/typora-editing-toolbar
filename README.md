@@ -6,8 +6,8 @@ Windows 工具栏、AI 阅读助手、ScienceDirect 抓取扩展与科研绘图�
 
 | 内容 | 版本 | 下载 | 说明 |
 | --- | --- | --- | --- |
-| Typora 编辑工具栏与完整源码 | 1.114.13 | [安装 ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/0b4b99d83385f4f2504b12889d45e06fd32f0ef5/downloads/typora-editing-toolbar-2026-10-11-v1.114.13.zip) | 下方安装步骤 |
-| AI 阅读助手独立模块 | 1.3.6 | [模块 ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/b9b23f3ef5e24c009a8510ec105c72b4ff895cc5/downloads/ai-reading-assistant-1.3.6.zip) | [模块说明](docs/ai-reading-assistant.md) |
+| Typora 编辑工具栏与完整源码 | 1.114.14 | [安装 ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/1cf121c76071af57022cd1adc1377c12a0288797/downloads/typora-editing-toolbar-2026-10-11-v1.114.14.zip) | 下方安装步骤 |
+| AI 阅读助手独立模块 | 1.3.7 | [模块 ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/1cf121c76071af57022cd1adc1377c12a0288797/downloads/ai-reading-assistant-1.3.7.zip) | [模块说明](docs/ai-reading-assistant.md) |
 | ScienceDirect → Typora | 0.5.17 | [扩展 ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/b9b23f3ef5e24c009a8510ec105c72b4ff895cc5/downloads/sciencedirect-typora-exporter-v0.5.17.zip) | [扩展安装](docs/sciencedirect-typora-exporter.md) |
 | 科研 Python 绘图 Skill | 1.1.0 | [Skill ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/b9b23f3ef5e24c009a8510ec105c72b4ff895cc5/downloads/scientific-python-plotting.zip) | [技能导入](docs/scientific-python-plotting.md) |
 
@@ -24,13 +24,18 @@ Windows 工具栏、AI 阅读助手、ScienceDirect 抓取扩展与科研绘图�
 
 面向 Windows，安装包测试宿主为 Typora 1.14.10。
 
-## AI 1.3.6 更新
+## AI 1.3.7 更新
+
+AI 窗口复用工具栏的公共拖动实现；旧工具栏按需加载兼容代码，停用时清理，最低版本保持 1.114.3。现有对话与配置保留。
 
 欢迎页名言与经典诗词扩充到 100 条，出处和作者单独显示。重新打开文档后打开助手、再次打开助手或新建对话时换句，避免连续重复。已有对话不受影响。最低工具栏版本仍为 1.114.3，在“插件市场 → 浏览市场”更新独立模块。
 
 [100 条名句清单](docs/ai-welcome-quotes.md)
 
-## 1.114.13 侧栏与浮动工具栏修复
+## 1.114.14 统一拖动支持
+
+- 合并侧栏、工具栏和 AI 窗口的逐帧调度、遮罩及公共样式，各窗口仍独立处理位置和大小。
+- 新工具栏兼容旧 AI，新 AI 兼容 1.114.3 起的工具栏；不安装或停用 AI 也保留主程序拖动支持。
 
 - 未安装 AI 阅读助手时，侧栏与正文边界同步移动，消除拉伸延迟。
 - 恢复顶部工具栏拖动与浮动，位置在重启后保留。
@@ -51,7 +56,7 @@ Windows 工具栏、AI 阅读助手、ScienceDirect 抓取扩展与科研绘图�
 - ScienceDirect 扩展与工具栏通过端口 23120 连接，两端需要匹配更新。
 - 绘图 Skill 同步当前规范与 Illustrator 编辑参考。
 
-验证：40 项相关测试通过；隔离 Typora 中验证未安装 AI 时侧栏同步、工具栏拖动与重启位置记忆、明暗样式和 360px 窄窗口。安装包全部 524 项文件校验通过。
+验证：94 项相关测试通过；隔离 Typora 验证未安装 AI、新工具栏配新旧 AI、1.114.3 工具栏配新 AI，以及拖动取消、设置位置保存、连续启停和拖动中停用清理。明暗及 360px 窗口已检查；安装包全部 528 项文件校验通过。
 
 ## 官方模块市场
 
