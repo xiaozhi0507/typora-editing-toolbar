@@ -6,8 +6,8 @@ Windows 工具栏、AI 阅读助手、ScienceDirect 抓取扩展与科研绘图�
 
 | 内容 | 版本 | 下载 | 说明 |
 | --- | --- | --- | --- |
-| Typora 编辑工具栏与完整源码 | 1.114.27 | [安装 ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/5ea67bf6ce5d190e72331dafb6045538157b7937/downloads/typora-editing-toolbar-2026-10-11-v1.114.27.zip) | 下方安装步骤 |
-| AI 阅读助手独立模块 | 1.3.12 | [模块 ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/5ea67bf6ce5d190e72331dafb6045538157b7937/downloads/ai-reading-assistant-1.3.12.zip) | [模块说明](docs/ai-reading-assistant.md) |
+| Typora 编辑工具栏与完整源码 | 1.114.29 | [安装 ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/51f290e14b5c522d2f18b7e473dba279f23606cb/downloads/typora-editing-toolbar-2026-10-12-v1.114.29.zip) | 下方安装步骤 |
+| AI 阅读助手独立模块 | 1.3.13 | [模块 ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/51f290e14b5c522d2f18b7e473dba279f23606cb/downloads/ai-reading-assistant-1.3.13.zip) | [模块说明](docs/ai-reading-assistant.md) |
 | ScienceDirect → Typora | 0.5.18 | [扩展 ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/5a5c763ef936718137b8e6a5459ed92a9b6ff0e4/downloads/sciencedirect-typora-exporter-v0.5.18.zip) | [扩展安装](docs/sciencedirect-typora-exporter.md) |
 | 科研 Python 绘图 Skill | 1.1.0 | [Skill ZIP](https://raw.githubusercontent.com/xiaozhi0507/typora-editing-toolbar/b9b23f3ef5e24c009a8510ec105c72b4ff895cc5/downloads/scientific-python-plotting.zip) | [技能导入](docs/scientific-python-plotting.md) |
 
@@ -23,6 +23,22 @@ Windows 工具栏、AI 阅读助手、ScienceDirect 抓取扩展与科研绘图�
 4. 安装器备份后更新，完成后重新打开 Typora。
 
 面向 Windows，安装包测试宿主为 Typora 1.14.10。
+
+## 1.114.29 收藏置顶与重装恢复
+
+- 页面收藏、置顶和自定义分区新增可校验的本机文件备份，并同步保存到当前知识库索引。清理缓存、重装后重新选取完整知识库，或移动知识库文件夹后，可恢复导航记录。
+- 主动取消收藏和置顶会正常保存。索引及备用索引均丢失、但附件仍存在时，明确报错并阻止误建空库。
+- 关系图谱设置新增“跟随主题”；勾选后适配明暗主题，手动背景选项禁用，并移除冗余说明文字。
+
+重装前先运行新版并选用原知识库一次，再保留完整文件夹中的 library.json、library.json.previous 和 storage。外部链接文件须另行保留，已删除且没有备份的数据无法还原。[恢复说明](docs/navigation-recovery.md) · [工具栏发布说明](https://github.com/xiaozhi0507/typora-editing-toolbar/releases/tag/toolbar-v1.114.29)
+
+## AI 1.3.13 修复 12 秒诗句轮播
+
+- 修复页面常驻菜单被误判为弹出菜单、重复选择通知重置计时，导致部分电脑诗句完全不换的问题。
+- 动画接口不可用或结束事件停滞时自动恢复可读文字并继续轮换，兼容旧版监听接口。
+- 保留 200 句中文诗句、12 秒闲置切换、无倒计时及现有流光。正文、助手和未发送输入框聚焦均不阻止；草稿与光标保持原样。减少动态效果时直接换句。
+
+另一台电脑请分别在“插件市场 → 工具栏更新”和“插件市场 → 浏览市场”更新工具栏与 AI 模块，完成后完全退出并重开 Typora。[AI 发布说明](https://github.com/xiaozhi0507/typora-editing-toolbar/releases/tag/ai-reading-assistant-v1.3.13)
 
 ## 1.114.27 书籍导入、附件与导出
 
@@ -105,7 +121,7 @@ AI 窗口复用工具栏的公共拖动实现；旧工具栏按需加载兼容�
 - ScienceDirect 扩展与工具栏通过端口 23120 连接，两端需要匹配更新。
 - 绘图 Skill 同步当前规范与 Illustrator 编辑参考。
 
-本次发布前验证：145 项相关回归测试通过，工具栏 12 个运行文件和 AI 模块 9 个运行文件与本机已安装版本逐一匹配；两个 ZIP 清单与 SHA-256 已核验。现有隔离 Typora 浅色、深色、窄窗口、导入导出与交互验收记录保留。抓取扩展 0.5.18 和绘图 Skill 1.1.0 保持不变。
+本次发布前验证：123 项相关测试和 16 组隔离 Typora 实际检查通过；工具栏 12 个运行文件和 AI 模块 9 个文件与已安装版本匹配，两个 ZIP 清单与 SHA-256 已核验。抓取扩展与绘图 Skill 保持原版本。
 
 ## 官方模块市场
 
